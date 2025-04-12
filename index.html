@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+  <header>
+    <h1>Image Gallery</h1>
+    <button onclick="toggleMode()" id="mode-btn">Dark Mode</button>
+  </header>
+
+  <div class="gallery">
+    <img src="images/image1.png" onclick="openModal(0)" alt="Tower Bridge — London, United Kingdom">
+    <img src="images/image2.png" onclick="openModal(1)" alt="Golden Gate Bridge — San Francisco, USA">
+    <img src="images/image3.png" onclick="openModal(2)" alt="Burj Al Arab — Dubai, United Arab Emirates">
+    <img src="images/image4.png" onclick="openModal(3)" alt="Taj Mahal — Agra, India">
+    <img src="images/image5.png" onclick="openModal(4)" alt="Sanctuary of Truth — Pattaya, Thailand">
+    <img src="images/image6.png" onclick="openModal(5)" alt="Big Ben & Palace of Westminster — London, UK">
+    <img src="images/image7.png" onclick="openModal(6)" alt="Red Fort — Delhi, India">
+    <img src="images/image8.png" onclick="openModal(7)" alt="Pagoda at Nachi Falls — Japan">
+    <img src="images/image9.png" onclick="openModal(8)" alt="Dal Lake — Srinagar, Kashmir, India">
+    <img src="images/image10.png" onclick="openModal(9)" alt="Mount Rushmore — South Dakota, USA">
+    <img src="images/image11.png" onclick="openModal(10)" alt="Sydney Skyline — Sydney, Australia">
+    <img src="images/image12.png" onclick="openModal(11)" alt="Atlantis The Palm — Dubai, UAE">
+  </div>
+
+  <div class="modal" id="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modal-img">
+    <p id="caption"></p>
+    <div class="controls">
+      <button onclick="prevImage()">Prev</button>
+      <button onclick="nextImage()">Next</button>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
